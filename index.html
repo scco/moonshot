@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>moonshot</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+	<link href="assets/css/app.css?v1" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<meta name="robots" content="index,follow" />
+	<meta name="audience" content="Alle" />
+	<meta name="revisit-after" content="7 days" />
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+</head>
+
+<body class="">
+
+
+<!--HEADER-->
+<header>
+
+	<!-- left logo -->
+	<div class="header-logo">
+		<a data-kinetics-attraction href="/">
+			<!--pls load as regular svg inline with react -->
+			<object type="image/svg+xml" data="assets/images/logo-moon.svg"></object>
+		</a>
+	</div>
+
+	<!-- right nav -->
+	<div class="header-navigation">
+
+		<!-- page navigation -->
+		<nav id="pageMenu">
+			<ul>
+				<a href=""><li aria-current="page">Home</li></a>
+				<a href=""><li>Announcement</li></a>
+				<a href=""><li>Projects</li></a>
+				<a href=""><li>Discussion</li></a>
+			</ul>
+		</nav>
+
+		<!-- mobile buger ui -->
+		<div data-kinetics-attraction class="burger">
+			<div id="openMenu" class="icon">
+				<!-- pls load "assets/images/menu.svg" inline instead -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><line x1="16" y1="32" x2="48" y2="32" /><line x1="16" y1="20" x2="48" y2="20" /><line x1="16" y1="44" x2="48" y2="44" /></svg>
+			</div>
+			<div id="closeMenu" class="icon hide">
+				<!-- pls load "assets/images/close.svg" inline instead -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><line x1="16" y1="16" x2="48" y2="48" /><line x1="48" y1="16" x2="16" y2="48" /></svg>
+			</div>
+		</div>
+
+		<!-- wallet -->
+		<div id="openWalletMenu" class="wallet-status" data-kinetics-attraction>
+			<!-- hide if connected to a provider -->
+			<div class="icon">
+				<!-- pls load "assets/images/wallet.svg" inline instead -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M52 26V16a4 4 0 0 0-4-4H12a4 4 0 0 0-4 4v32a4 4 0 0 0 4 4h36a4 4 0 0 0 4-4V38"/><rect x="48" y="26" width="8" height="12"/></svg>	
+			</div>
+			<!-- hide if not connected to a provider -->
+			<div class="provider">
+				<!-- example ( will probably come from walletconnect i assume ) -->
+				<img src="assets/images/metamask.svg" alt="">
+			</div>
+		</div>
+
+	</div>
+</header>
+
+
+<!--WALLET-MENU-->
+<div id="walletMenu" class="wallet-menu">
+	<div id="closeWalletMenu" class="action" >
+		<span>Wallet</span>
+		<div class="icon">
+			<!-- pls load "assets/images/close.svg" inline instead -->
+			<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><line x1="16" y1="16" x2="48" y2="48" /><line x1="48" y1="16" x2="16" y2="48" /></svg>
+		</div>
+	</div>
+
+	<div class="wallet-detail">
+		<div class="network">mainnet</div>
+		<div class="address">0xbadc...8d90</div>
+		<div class="balance">1000 ETH</div>
+		<div class="token">1337 MATIC</div>
+	</div>
+
+	<div class="action">
+		<span>Change Provider</span>
+		<div class="icon">
+			<!-- pls load "assets/images/provider.svg" inline instead -->
+			<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><polygon points="8 20 8 44 32 56 56 44 56 20 32 8 8 20"/><line x1="32" y1="32" x2="56" y2="20"/><line x1="32" y1="56" x2="32" y2="32"/><line x1="56" y1="44" x2="32" y2="32"/><line x1="8" y1="44" x2="32" y2="32"/><line x1="8" y1="20" x2="32" y2="32"/><line x1="32" y1="8" x2="32" y2="32"/></svg>
+		</div>
+	</div>
+
+	<div class="action">
+		<span>Connect</span>
+		<div class="icon">
+			<!-- pls load "assets/images/disconnect.svg" inline instead -->
+			<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><path d="M49,15A24,24,0,1,1,15,15" /><line x1="32" y1="8" x2="32" y2="32" /></svg>
+		</div>
+	</div>
+
+	<div class="action">
+		<span>Disconnect</span>
+		<div class="icon">
+			<!-- pls load "assets/images/disconnect.svg" inline instead -->
+			<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><path d="M49,15A24,24,0,1,1,15,15" /><line x1="32" y1="8" x2="32" y2="32" /></svg>
+		</div>
+	</div>
+
+</div>
+
+
+
+<!--INTRO-->
+<article id="intro">
+	<section class="content-intro">
+		<div>
+			<h1>What</h1>
+			<p>We've now got programmable money, and for the first time ever it's possible to program our values into our money.  We value coordination, so why not use programmable money to create better coordination tools? The moonshot collective is a collection of builders & web3 community members who are looking to prototype experiments in coordination (whether thats public goods, private goods, governance tools). Got dev skills + want to help build the future? <br/><a href="#subscribe">Get Involved.</a></p>
+		</div>
+		<figure>
+			<!-- not needed to be inline -->
+			<img src="assets/images/collab-animation.svg">
+		</figure>
+	</section>
+</article>
+
+
+
+<!--MEMBERS-->
+<!-- the images will be probably be replaced by a lot regular images i assume -->
+
+<article id="members">
+	<section class="column">
+		<h1>Who</h1>
+	</section>
+	<section class="content-members">
+		<figure data-kinetics-attraction >
+			<a href="#">
+				<img src="assets/images/moon-20.svg">
+				<figcaption>Austin</figcaption>
+			</a>
+		</figure>
+		<figure data-kinetics-attraction >
+			<a href="#">
+				<img src="assets/images/moon-40.svg">
+				<figcaption>Kevin</figcaption>
+			</a>
+		</figure>
+		<figure data-kinetics-attraction >
+			<a href="#">
+				<img src="assets/images/moon-60.svg">
+				<figcaption>Castall</figcaption>
+			</a>
+		</figure>
+		<figure data-kinetics-attraction >
+			<a href="#">
+				<img src="assets/images/moon-80.svg">
+				<figcaption>Auryn</figcaption>
+			</a>
+		</figure>
+		<figure data-kinetics-attraction >
+			<a href="#">
+				<img src="assets/images/moon-100.svg">
+				<figcaption>You</figcaption>
+			</a>
+		</figure>
+		<figure data-kinetics-attraction >
+			<a href="#">
+				<img src="assets/images/moon-20.svg">
+				<figcaption>Austin</figcaption>
+			</a>
+		</figure>
+		<figure data-kinetics-attraction >
+			<a href="#">
+				<img src="assets/images/moon-40.svg">
+				<figcaption>Kevin</figcaption>
+			</a>
+		</figure>
+		<figure data-kinetics-attraction >
+			<a href="#">
+				<img src="assets/images/moon-60.svg">
+				<figcaption>Castall</figcaption>
+			</a>
+		</figure>
+		<figure data-kinetics-attraction >
+			<a href="#">
+				<img src="assets/images/moon-80.svg">
+				<figcaption>Auryn</figcaption>
+			</a>
+		</figure>
+		<figure data-kinetics-attraction >
+			<a href="#">
+				<img src="assets/images/moon-100.svg">
+				<figcaption>You</figcaption>
+			</a>
+		</figure>				
+	</section>
+</article>
+
+
+<!--EXPLAIN-->
+<article id="explain">
+	<section class="column">
+		<h1>How it works</h1>
+		<p>Moonshot collective provides ideas, devs, funding as builders grow their public goods funding experiments.</p>
+	</section>
+	<section class="content-explain">
+		<figure data-kinetics-attraction>
+			<object type="image/svg+xml" data="assets/images/prototype.svg"></object>
+			<figcaption><span>1.</span>Prototype</figcaption>
+		</figure>
+		<figure data-kinetics-attraction>
+			<object type="image/svg+xml" data="assets/images/marketvalidation.svg"></object>
+			<figcaption><span>2.</span>Market Validation</figcaption>
+		</figure>
+		<figure data-kinetics-attraction>
+			<object type="image/svg+xml" data="assets/images/growth.svg"></object>
+			<figcaption><span>3.</span>Growth</figcaption>
+		</figure>
+		<figure data-kinetics-attraction>
+			<object type="image/svg+xml" data="assets/images/decentralize.svg"></object>
+			<figcaption><span>4.</span>Decentralize</figcaption>
+		</figure>						
+	</section>
+</article>
+
+
+<!--PROECTS-->
+<article id="projects">
+	<section class="column">
+		<h1>Who</h1>
+	</section>
+	<section class="content-projects">
+		<figure data-kinetics-attraction >
+			<a href="#">
+				<!--pls load svg line with react -->
+				<object type="image/svg+xml" data="assets/images/project-3.svg"></object>
+				<figcaption>Buidl Guidl</figcaption>
+			</a>
+		</figure>
+		<figure data-kinetics-attraction >
+			<a href="#">
+				<!--pls load as regular svg line with react -->
+				<object type="image/svg+xml" data="assets/images/project-4.svg"></object>
+				<figcaption>Gitcoin</figcaption>
+			</a>
+		</figure>
+		<figure data-kinetics-attraction >
+			<a href="#">
+				<!--pls load as regular svg line with react -->
+				<object type="image/svg+xml" data="assets/images/project-5.svg"></object>
+				<figcaption>Scaffold.eth</figcaption>
+			</a>
+		</figure>
+		<figure data-kinetics-attraction >
+			<a href="#">
+				<!--pls load as regular svg line with react -->
+				<object type="image/svg+xml" data="assets/images/project-6.svg"></object>
+				<figcaption>Alumni X</figcaption>
+			</a>
+		</figure>
+		<figure data-kinetics-attraction >
+			<a href="#">
+				<!--pls load as regular svg line with react -->
+				<object type="image/svg+xml" data="assets/images/project-7.svg"></object>
+				<figcaption>Yours</figcaption>
+			</a>
+		</figure>		
+	</section>
+</article>
+
+
+<!--SUBSCRIBE-->
+<article id="subscribe">
+	<section class="column">
+		<h1>Get Involved</h1>
+		<p>Are you a builder who wants to work on public goods? Click below to join the workstream email group.</p>
+	</section>	
+	<section class="content-subscribe">
+		<div class="wrapper">
+			<input type="text" name="" placeholder="moon@shot" />
+		</div>
+		<button data-kinetics-attraction class="btn">Subscribe</button>
+	</section>
+</article>
+
+
+
+<footer>
+	<div class="wrapper">
+		<!--pls load as regular svg inline with react -->
+		<figure data-kinetics-attraction>
+			<object type="image/svg+xml" data="assets/images/colorado.svg"></object>
+		</figure>
+		<div>
+			Built with <3 in Colorado<br/>
+			<a href="#">Gitcoin</a> | <a href="#">Buidl Guidl</a>
+		</div>
+	</div>
+</footer>
+
+
+<script src="https://unpkg.com/@drum-n-bass/kinetics" defer></script>
+<script src="assets/js/kinetics.init.js" defer></script>
+<script src="assets/js/pagemenu.js" defer></script>
+<script src="assets/js/walletmenu.js" defer></script>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,2 +1,0 @@
-# moonshot
- project moonshot frontend
