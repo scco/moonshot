@@ -1,5 +1,0 @@
-
-- embed this how it works.
-https://www.svgator.com/help/getting-started/trigger-the-svg-animation-manually-using-javascript
-waiting for octas animation
-
