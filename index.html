@@ -133,6 +133,17 @@
 
 
 
+<!-- moonify filter ( transform images yellow ) -->
+<svg>
+	<filter id="moonify">
+		<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+		values="1 0 0 0 0 0 0.8 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+	</filter>
+</svg>
+
+
+
+
 <!--MEMBERS-->
 <!-- the images will be probably be replaced by a lot regular images i assume -->
 
@@ -143,7 +154,7 @@
 	<section class="content-members">
 		<figure data-kinetics-attraction >
 			<a href="#">
-				<img src="assets/images/moon-20.svg">
+				<img class="moonify" src="assets/images/members/test.jpg">
 				<figcaption>Austin</figcaption>
 			</a>
 		</figure>

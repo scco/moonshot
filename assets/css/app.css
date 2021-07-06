@@ -460,6 +460,9 @@ nav [aria-current=page]:after {
   display: block;
   width: 100%;
   margin-bottom: 2em;
+}
+.content-members figure img.moonify, .content-members figure svg.moonify, .content-members figure object.moonify {
+  filter: grayscale(100%) url(#moonify);
   border-radius: 999px;
 }
 .content-members figure figcaption {

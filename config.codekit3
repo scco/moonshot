@@ -140,6 +140,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/assets\/images\/members\/test.jpg" : {
+      "ft" : 16384,
+      "iS" : 25271,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/members\/test.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/images\/menu.svg" : {
       "ft" : 2097152,
       "miP" : 0,
