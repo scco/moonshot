@@ -270,14 +270,6 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/assets\/images\/projects.zip" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/images\/projects.zip",
-      "oF" : 0
-    },
     "\/assets\/images\/prototype.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -613,14 +605,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/index.html",
-      "oF" : 0
-    },
-    "\/toto.txt" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/toto.txt",
       "oF" : 0
     }
   },
